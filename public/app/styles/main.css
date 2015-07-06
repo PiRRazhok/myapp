@@ -1,0 +1,24 @@
+.c1 div.col-xs-3 {
+	min-height: 200px;
+}
+.c1 div.col-xs-3:last-child {
+	margin-top: -240px
+}
+.c1 div.col-xs-9 {
+	min-height: 405px;
+	margin-bottom: 20px;
+	margin-left: -25px;
+}
+.c1 div {
+	margin: 0 0 5px 0;
+}
+.small li {
+	font-size: 14px;
+	line-height: 1;
+	padding-bottom: 5px;
+	list-style-type: none;
+}
+
+.small {
+	padding-left: 0;
+}

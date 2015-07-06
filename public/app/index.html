@@ -1,0 +1,130 @@
+  <!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Товарищество собственников</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/dist/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/dist/css/flat-ui.min.css">
+</head>
+  <body ng-app="arseniApp">
+      
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="#">ЖЭС №101</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        <ul class="nav navbar-nav">
+          <li><a href="#/struct">Структура</a></li>
+          <li><a href="#/price">Прейскурант</a></li>
+          <li><a href="#/vacant">Вакансии</a></li>
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">О нас<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#/photo">Фото</a></li>
+              <li><a href="#/staff">Сотрудники</a></li>
+            </ul>
+          </li>
+          <li><a href="#/contacts">Контакты</a></li>
+          <li><a href="#/enterance">Личный кабинет</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="#" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+            <span class="input-group-btn">
+              <button type="submit" class="btn"><span class="fui-search"></span></button>
+            </span>
+          </div>
+        </div>
+        </form>
+        </div>
+      </nav>
+
+     <!--  <div class="container">
+        <input type="number" ng-model="tt1">
+        <input type="number" ng-model="tt2">
+        <input type="number" ng-model="tt3">
+        <h1>Text: {{tt1+tt2+tt3}}</h1>
+      </div> -->
+
+      <div class="container c1"> 
+        <div class="col-xs-3">
+          <div class="login-form">
+            <h6>Полезно знать</h6>
+            <ul class="small">
+              <li><a href="#/st1">Что такое товарищество собственников?</a></li>
+              <li><a href="#/st2">Каковы преимущества товарищества собственников?</a></li>
+              <li><a href="#/st3">Кто руководит товариществом собственников?</a></li>
+              <li><a href="#/st4">Как стать членом товарищества собственников?</a></li>
+              <li><a href="#/st5">Какие права имеет член товарищества собственников?</a></li>
+              <li><a href="#/st6">Какие платежи обязан вносить член товарищества собственников?</a></li>
+            </ul>
+          </div>
+          <div class="login-form">
+            <a href="#/forum"><h6>Форум</h6></a>
+            <ul>
+              <li><div>
+                <a href="">логин </a><i>дата</i><br/>
+                <p>сообщенько</p>
+              </div></li>
+              <li><div>
+                <a href="">логин </a><i>дата</i><br/>
+                <p>сообщенько</p>
+              </div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-9">
+          <div class="login-form" ng-view=""></div>
+        </div>
+
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-7">
+              <h3 class="footer-title">Жэс №101</h3>
+              <p>Интернет-портал для жильцов и администраций товариществ собственников недвижимости, жилищно-строительных и гаражных кооперативов. Присоединяйтесь на сайте <a href="http://ulasnik.by/" target="_blank">ulasnik.by!</a>
+              </p>
+
+            </div> 
+            
+            <div class="col-xs-5">
+              <div class="footer-banner">
+                <h3 class="footer-title"></h3>
+                <ul>
+                  <li><a href="#">Структура</a></li>
+                  <li><a href="#">Прейскурант</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="">Фото</a></li>
+                  <li><a href="">Сотрудники</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- подключаем компоненты -->
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <!-- подключаем роутер, сервис и контроллеры -->
+      <script src="scripts/app.js"></script>
+      <script src="scripts/services/services.js"></script>
+      <script src="bower_components/dist/js/vendor/jquery.min.js"></script>
+      <script src="scripts/jQuery.cookie.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/controllers/controller.js"></script>
+      <!-- дополнительно библиотека jquery.js и скрипт из библиотеки bootstrap -->
+      <script src="bower_components/dist/js/flat-ui.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<h4>Добро пожаловать в ваш личный кабинет</h4>
+<ul ng-init="cabinet()">
+	<li ng-repeat="i in fun"><div>
+		<a href="">{{i.login}}</a>
+	</div></li>
+	<li ng-repeat="i in fun"><div>
+		<a href="">{{i.surname}}</a>
+	</div></li>
+	<li ng-repeat="i in fun"><div>
+		<a href="">{{i.name}}</a>
+	</div></li>
+	<li ng-repeat="i in fun"><div>
+		<a href="">{{i.fatherName}}</a>
+	</div></li>
+	<li ng-repeat="i in fun"><div>
+		<a href="">{{i.adress}}</a>
+	</div></li>
+</ul>
+<div>
+	<h6>Вывести статистику</h6>
+	<select>
+		<option>Месяц</option>
+		<option>Пол года</option>
+		<option>Год</option>
+	</select>
+</div>
+<table>
+	<tr>
+		<th>Электричество</th>
+		<th>Вода</th>
+		<th>Газ</th>
+		<th>Отопление</th>
+		<th>Всего</th>
+	</tr>
+
+	<tr>
+		<td></td> <td></td> <td></td> <td></td> <td></td>
+	</tr>			
+</table>
+<button>Выйти</button>

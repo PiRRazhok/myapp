@@ -1,0 +1,17 @@
+<h4>Форум</h4>
+<ul ng-init="loadForum()">
+	<li ng-repeat="i in forumMessages"><div>
+        <a href="">{{i.login}} </a><i> {{i.data}}</i><br/>
+        <p>{{i.message}}</p>
+    </div></li>
+</ul>
+<div class="login-form">
+	<form ng-submit="forum()">
+		<div class="form-group">
+			<input type="text" name="message" ng-model="message" required></input>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-block">Отправить</button>
+		</div>
+	</form>
+</div>
